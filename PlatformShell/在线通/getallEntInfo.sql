@@ -1,1 +1,0 @@
-select concat(enter_name) into outfile '/var/lib/mysql-files/allentname.txt' from uic_enterprise_info;

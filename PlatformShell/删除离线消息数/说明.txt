@@ -1,2 +1,0 @@
-getoffmsg.sh 查看离线消息数
-deloffmsg.sh 删除旧消息，只保留2天

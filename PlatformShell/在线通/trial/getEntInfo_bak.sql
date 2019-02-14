@@ -1,1 +1,0 @@
-select concat(id,',',enter_name,',',user_number,',',FROM_UNIXTIME(create_time,'%Y%m%d')) into outfile '/var/lib/mysql-files/trialent.txt' from uic_enterprise_info where id in (seduic_enterprise_info);

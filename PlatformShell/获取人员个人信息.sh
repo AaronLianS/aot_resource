@@ -1,4 +1,0 @@
-#------------------------【获取人员个人信息】------------------------
-curl "http://baseserver1:8015/uic-server-user/uic/user/getUserInfoByAccount?account=18001761560"
-返回：
-{"msgCode":200,"subMsgCode":null,"msgDesc":null,"msg":"操作成功","subMsg":null,"result":{"id":423391,"userNumber":66539559,"nickName":"黄诗原","personalSignature":"","realName":"伍军","englishName":"","sex":2,"idNumber":"","avatar":null,"mobile":"18001761560","homeTelephone":"","email":null,"birthday":19800101,"homepage":"","hometownCountry":0,"hometownProvince":0,"hometownCity":0,"hometownArea":0,"seatCountry":0,"seatProvice":0,"seatCity":0,"seatArea":0,"address":"","postCode":"","personalIntro":"","authorizeFlag":1,"openInvitation":0,"openInformation":0,"refuseStranger":0,"groupInvitatedFlag":0,"createTime":1495617601,"updateTime":1536825566}}

@@ -1,1 +1,0 @@
-select concat(user_number) into outfile '/var/lib/mysql-files/trialentbuddy.txt' from uic_enterprise_buddy where enterprise_id=700111;
