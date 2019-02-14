@@ -1,0 +1,1 @@
+select concat(id,',',enter_name,',',user_number,',',FROM_UNIXTIME(create_time,'%Y%m%d')) into outfile '/var/lib/mysql-files/trialent.txt' from uic_enterprise_info where id in (700113,700114,700118,700119,700121,700122,700123,700124,700125,700126);

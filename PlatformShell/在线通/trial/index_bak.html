@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<META HTTP-EQUIV="Refresh" CONTENT="6">
+<title>联系客户</title>
+<link href="resources/css/kefu/kefu.css" rel="stylesheet" type="text/css">
+<!--引用公共资源-->
+<script type="text/javascript" src="../common/custom/ct1.0.0.min.js"></script>
+<script type="text/javascript" src="resources/plugins/jquery/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="resources/js/kefu/kefu.js"></script>
+<script>
+
+$(function(){
+var temp = $('#inputuserid').val();
+
+$('#kefuBtn3').click(function(){
+	simOpenChat(temp, '', '', '', function (data) {
+		if(data.code == 300){
+			alert('打开聊天窗口失败！');
+		}
+	})
+});
+}); 
+</script>
+
+<script>
+function cell(rowid)
+{
+var x=document.getElementById('UserTable').rows[rowid].cells;
+//alert(x[1].innerHTML);
+
+	simOpenChat(x[1].innerHTML, '', '', '', function (data) {
+		if(data.code == 300){
+			alert('打开聊天窗口失败！');
+		}
+	})
+}
+</script>
+
+<style>
+#jz{ margin:0 auto; width:320px; height:100px;}
+</style>
+
+</head>
+
+<body>
+
+<div class="main_wraper">
+
+
+	<div class="title_er">在窗口输入客户ID<br></div>
+	手动输入客户ID:<br>
+<input type="text" name="userid" value="123" id="inputuserid">
+    <div class="tmain_er"><div class="wraper">	
+    	<div class="lineli">
+        	<div class="people kefup1"></div>
+            <div class="texter">联系客户</div>
+            <div class="aniuer"><button id="kefuBtn3">联系客户</button></div>
+        </div>
+
+    </div></div>
+</div>
+
+<div id="jz">
+<table id="UserTable" border="1">
+<tr>
+<td>组织名称&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>用户ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+

@@ -1,0 +1,30 @@
+
+.essay_wraper {margin:auto;padding:20px;max-width:710px;}
+
+.essay_wraper>.wraper {width:100%;}
+
+.essay_wraper>.wraper>.header {width:100%;border-bottom:1px solid #ddd;padding-bottom:14px;}
+.essay_wraper>.wraper>.header>.title {width:100%;font-weight:bold;font-size:20px;color:#333;}
+.essay_wraper>.wraper>.header>.datetime {width:100%;padding-top:10px;font-size:14px;color:#999;}
+
+.essay_wraper>.wraper>.mainer {width:100%;}
+.essay_wraper>.wraper>.mainer>p,
+.essay_wraper>.wraper>.mainer>div {width:100%;padding-top:8px;font-size:15px;line-height:24px;color:#333;}
+
+.essay_wraper>.wraper>.mainer>.dt01 {padding-top:20px;font-size:18px;}/*标题1*/
+.essay_wraper>.wraper>.mainer>.dt02 {padding:20px 0 0 20px;font-size:18px;line-height:24px;color:#333;
+background:url(image/dot_10_10_333333.png) no-repeat 4px 28px;}
+.essay_wraper>.wraper>.mainer>.dt03 {position:relative;height:24px;}/*针对第一个字是“【”*/
+.essay_wraper>.wraper>.mainer>.dt03>b {position:absolute;left:-10px;top:10px;font-weight:normal;font-size:18px;}
+
+.essay_wraper>.wraper>.mainer>.difc {padding:20px 0;text-align:center;}/*div image full center*/
+.essay_wraper>.wraper>.mainer>.difc img {width:100%;}
+
+.essay_wraper>.wraper>.downer {width:100%;padding:30px 0 10px 0;}
+.essay_wraper>.wraper>.downer>.button {width:100%;border-top:1px solid #ddd;padding-top:29px;}
+.essay_wraper>.wraper>.downer>.button>button {display:block;width:60%;height:46px;margin:auto;background:#2ba7ff;
+	font:16px/46px 'microsoft yahei';color:#fff;text-align:center;border-radius:5px;}
+.essay_wraper>.wraper>.downer>.button>button.fclick {background:#0788e3;}
+.essay_wraper>.wraper>.downer>.button>button.disabled {background:#e3e4e6;}
+.essay_wraper>.wraper>.downer>.texter {width:100%;height:24px;padding-top:12px;
+	font:15px/24px 'microsoft yahei';color:#a1a1a1;text-align:center;}
